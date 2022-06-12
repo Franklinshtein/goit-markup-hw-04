@@ -11,9 +11,8 @@
   --cols: 3;
 }
 
-
 body {
-  font-family: 'Roboto', sans-serif; /* основний шрифт сайту */
+  font-family: "Roboto", sans-serif; /* основний шрифт сайту */
   font-size: 16px;
   color: var(--primary-text-color);
   letter-spacing: 0.03em;
@@ -109,7 +108,7 @@ a {
 
 /* логотип WebStudio */
 .logo {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2px;
@@ -142,33 +141,23 @@ a {
 
 /* стилі іконок контактів */
 .heder-icon {
-width: 16px;
-height: 12px;
-color:currentColor;
-margin-right: 10px;
+  fill: currentColor;
+  margin-right: 10px;
 }
-
 
 .heder-icon:hover,
 .heder-icon:focus {
-    fill: var(--accent-color);
-  }
-
+  fill: var(--accent-color);
+}
 
 .benefits-icon-wrap {
   display: flex;
-  width: 270px;
-    height: 120px;
-    justify-content: center;
-    align-items:center;
-    border-radius: 4px;
-    background-color:var(--button-background);
-    margin-bottom: 30px;
-}
-
-.benefits-icon {
-width: 70px;
-height: 70px;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background-color: var(--button-background);
+  margin-bottom: 30px;
 }
 
 /* контакти в хедері */
@@ -261,11 +250,18 @@ a:focus {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-background-image:linear-gradient(to top,
-      rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url('../images/Img.jpg');
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: cover;
+  background-image: linear-gradient(
+      to top,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/Img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .about {
@@ -323,35 +319,35 @@ p {
 }
 
 .team-card {
-flex-basis: calc((100% - var(--gap) * (4 - 1)) / 4);
+  flex-basis: calc((100% - var(--gap) * (4 - 1)) / 4);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  background-color: #ffffff;
 }
 
 .socials-list {
   display: flex;
   justify-content: center;
-  align-items:center;
-  margin-bottom: var(--gap);
-  color:var(--text-color-gray);
+  align-items: center;
+  color: var(--text-color-gray);
   margin-left: auto;
   margin-right: auto;
   padding: 0px;
+  margin-top: 16px;
 }
-
 
 .socials-link {
   display: flex;
-  align-items:center;
+  align-items: center;
   width: 44px;
   height: 44px;
-  border-radius:50%;
+  border-radius: 50%;
   justify-content: center;
-  align-items:center;
+  align-items: center;
 }
 
-.socials-item{
+.socials-item {
   fill: currentColor;
   border-radius: 50%;
 }
@@ -361,20 +357,18 @@ flex-basis: calc((100% - var(--gap) * (4 - 1)) / 4);
 }
 
 .socials-icon {
-  width: 20px;
-  height: 20px;
   fill: currentColor;
 }
 
 .socials-link:hover,
 .socials-link:focus {
-color:var(--text-color-white);
-background-color:var(--accent-color);
+  color: var(--text-color-white);
+  background-color: var(--accent-color);
 }
 
-/* .socials-icon:hover{
+.socials-icon:hover {
   fill: var(--text-color-white);
-} */
+}
 
 .job {
   text-align: center;
@@ -396,16 +390,16 @@ background-color:var(--accent-color);
 }
 
 .benefits-item {
-flex-basis:calc((100% - var(--gap) * (4 - 1)) / 4);
+  flex-basis: calc((100% - var(--gap) * (4 - 1)) / 4);
 }
 
 .specialization-item {
-flex-basis: calc((100% - var(--gap) * (var(--cols) - 1)) / var(--cols));
+  flex-basis: calc((100% - var(--gap) * (var(--cols) - 1)) / var(--cols));
 }
 
 /* відступи між блоками */
 .item {
-flex-basis: calc((100% - var(--gap) * (var(--cols) - 1)) / var(--cols));
+  flex-basis: calc((100% - var(--gap) * (var(--cols))) / var(--cols));
   margin-right: 30px;
   margin-bottom: 30px;
 }
@@ -416,6 +410,13 @@ flex-basis: calc((100% - var(--gap) * (var(--cols) - 1)) / var(--cols));
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   padding: 20px 24px;
+}
+
+.item-link:hover,
+.item-link:focus {
+  box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%),
+    1px 4px 6px rgb(0 0 0 / 16%);
+  outline: none;
 }
 
 .portfolio-list li:nth-child(3n) {
@@ -435,7 +436,7 @@ flex-basis: calc((100% - var(--gap) * (var(--cols) - 1)) / var(--cols));
 .flex {
   display: flex;
   padding-left: 0px;
-  gap:30px;
+  gap: 30px;
 }
 
 /* знімаємо правий відступ з крайніх елементів на головній сторінці*/
@@ -458,7 +459,7 @@ flex-basis: calc((100% - var(--gap) * (var(--cols) - 1)) / var(--cols));
   justify-content: center;
   align-items: center;
   padding: 0px;
-  margin:0 auto 50px;
+  margin: 0 auto 50px;
 }
 
 .portfolio-filter {
@@ -480,31 +481,38 @@ flex-basis: calc((100% - var(--gap) * (var(--cols) - 1)) / var(--cols));
   padding: 0px;
 }
 
-.clients-icon{
-width: 106px;
-height: 60px;
-fill: #AFB1B8;
+.clients-icon {
+  fill: #afb1b8;
 }
 
 .clients-item {
   display: flex;
-  align-items:center;
+  flex-basis: calc((100% - var(--gap) * (6 - 1)) / 6);
+  align-items: center;
   justify-content: center;
+}
+
+.clients-link {
+  display: flex;
   width: 170px;
   height: 92px;
-  border: 1px solid #AFB1B8;
+  border: 1px solid #afb1b8;
   border-radius: 4px;
+  align-items: center;
+  justify-content: center;
 }
 
-.clients-item:hover {
- border-color: var(--accent-color);
- color:var(--accent-color);
- fill:var(--accent-color);
-}
-
-.clients-icon:hover {
+.clients-link:hover,
+.clients-link:focus {
+  border-color: 1px solid var(--accent-color);
+  color: var(--accent-color);
+  outline: none;
   fill: var(--accent-color);
 }
+
+/* .clients-icon:hover {
+  fill: var(--accent-color);
+} */
 
 footer {
   font-size: 14px;
@@ -546,22 +554,20 @@ address ul {
   display: flex;
 }
 
-.address-container{
-margin-right: 70px;
+.address-container {
+  margin-right: 70px;
 }
 
 .join-us {
   font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
+  font-size: 14px;
+  line-height: 1.14;
   text-transform: uppercase;
-  color:var(--text-color-white);
+  color: var(--text-color-white);
   margin-bottom: 20px;
 }
 
 .join .socials-item {
-background-color: rgba(255, 255, 255, 0.1);
-color: var(--text-color-white);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--text-color-white);
 }
-
-
