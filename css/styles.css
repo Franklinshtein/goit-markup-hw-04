@@ -78,6 +78,7 @@ a {
   align-items: center;
 }
 
+/* навігація по сторінках в хедері */
 .main-nav {
   display: flex;
   align-items: center;
@@ -128,6 +129,7 @@ a {
   color: var(--text-color-white);
 }
 
+/* контакти в хедері */
 .contacts {
   display: flex;
   margin-left: auto;
@@ -265,7 +267,7 @@ a:focus {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 1600px;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -417,13 +419,6 @@ p {
   border-right: 1px solid #eeeeee;
   padding: 20px 24px;
 }
-/* .item:hover,
-.item:focus {
-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-0px 4px 4px rgba(0, 0, 0, 0.06),
-1px 4px 6px rgba(0, 0, 0, 0.16);
-outline: none;
-} */
 
 .item-link:hover,
 .item-link:focus {
@@ -529,9 +524,6 @@ outline: none;
   outline: none;
 }
 
-/* .clients-icon:hover {
-  fill: var(--accent-color);
-} */
 
 footer {
   font-size: 14px;
